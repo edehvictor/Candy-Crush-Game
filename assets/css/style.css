@@ -3,7 +3,7 @@
 }
 
 body{
-    /* height: 100vh; */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,6 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
-
 color: #85796b;
 border-radius: 10px;
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)inset,0 1px 0 white;
@@ -41,7 +40,6 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)inset,0 1px 0 white;
     height: 70px;
     width: 70px;
     /* background-color: #85796b; */
-   
 }
 h1, h3{
 font-family: "Montserrat", sans-serif;
@@ -54,4 +52,57 @@ h1{
 
 .dragging{
     opacity:0.4;
+}
+
+
+/* 860px */
+@media screen and (max-width:53.75rem){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .candy-grid{
+        height: 480px;
+        width: 480px;
+        margin-left:0px ;
+        margin-top: 0;
+    }
+    .candy-grid div{
+        height: 60px;
+        width: 60px;
+    }
+    .score-board{
+        order: 1;
+        /* min-width: 100px; */
+        margin-top: 15px;
+    }
+}
+
+
+/* 600px */
+@media screen and (max-width:37.5rem){
+   
+    .candy-grid{
+        height: 440px;
+        width: 440px;
+    }
+    .candy-grid div{
+        height: 55px;
+        width: 55px;
+    }
+
+}
+
+
+/* 480px */
+@media screen and (max-width:30rem){
+   .candy-grid{
+    height: 400px;
+    width: 400px;
+   }
+    .candy-grid div{
+        height: 50px;
+        width: 50px;
+    }
+  
 }

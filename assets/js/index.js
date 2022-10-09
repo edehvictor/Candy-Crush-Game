@@ -182,6 +182,8 @@ function checkColumnForThree() {
 
         const isBlank = squares[index].style.backgroundImage === "";
 
+
+        // The every() method checks if all elements in an array pass a test (provided as a function).
         const isMatched = columnOfThree.every((item) => squares[item].style.backgroundImage === decidingCandy && !isBlank)
         if (isMatched) {
             score += 3;
