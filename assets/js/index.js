@@ -13,11 +13,13 @@ const candy = [
 ]
 
 
+console.log(candy)
 function populateBoard() {
     for (let index = 0; index < numberOfSquareRow * numberOfSquareRow; index++) {
         const square = document.createElement('div');
         const randomCandy = Math.floor(Math.random() * candy.length)
         square.style.backgroundImage = candy[randomCandy]
+        square.style.backgroundPosition = 'center, center'
 
         square.setAttribute('draggable', true)
         square.setAttribute('id', index)

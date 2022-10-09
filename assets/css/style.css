@@ -60,6 +60,7 @@ h1{
     body{
         display: flex;
         flex-direction: column;
+        overflow-y: hidden;
     }
     .candy-grid{
         height: 480px;
